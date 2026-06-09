@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            background-color: black;
+            overflow-x: hidden;
+        }
+        footer{
+            background-color: cyan;
+            height: 70px;
+            width: 100%;
+        }
+        #header{
+            background-color: cyan;
+            height: 100px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .footer{
+            text-align: center;
+            position: relative;
+            top: 30%;
+        }
+        #hrt{
+            text-align: center;
+            font-size: 27px;
+            position: relative;
+            top: 15px;
+            left: 10px;
+        }
+        li{
+            position: relative;
+            top: 50%;
+            list-style-type:none;
+            display: inline-block;
+            border-radius: 5px;
+        } 
+        #logo,#button{
+            display: inline-block;
+        } 
+        #button{
+            position:absolute;
+            right:1px;
+        }
+        .img {
+            position: absolute;
+            right: 10%;
+            top: 25%;
+            border-radius: 40%;
+            border: 5px solid cyan;
+            width: 250px;
+            max-width: 100%;
+        }
+        @media(max-width:600px){
+            .img{
+                height:35%;
+                width: 35%;
+                right: 5px;
+                top: 30%;
+            }
+            .hrt{
+                display: none;
+            }
+        }
+        @media(min-width:500px){
+            .img{
+                height:45%;
+                right: 8px;
+                top: 30%;
+            }
+            .hrt{
+                display: inline-block;
+
+            }
+
+        }
+        p{
+            position: relative;
+            left: 20px;
+        }
+        h1{
+            text-decoration: underline;
+            text-align: center;
+        }
+        button{
+            padding: 5px;
+            background-color: rgb(198, 215, 215) ;
+            border-color: bisque;
+            border-width: 5px;
+            border-radius: 10px;
+            position: relative;
+            left: 15%;
+        }
+        hr{
+            color: aliceblue;
+        }
+        .mbnb{
+            position: relative;
+            left: 4%;
+        }
+        .mbnc{
+            position: relative;
+            left: 8%;
+        }
+        .cnt{
+            font-size: xx-large;
+            position: relative;
+            left: 8%;
+        }
+        .mbnd{
+            position: relative;
+            left: 13%;
+        }
+        button:hover{
+            background-color: rgb(53, 177, 177);
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .nav-btn{
+            padding: 8px 15px;
+            background-color: cyan;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+         <div id="container">
+        <div id="header">
+            <span id="hrt">❤️ MY PORTFOLIO</span>
+                <div id="button">
+                    <ul>
+                        <li><a href="#about_me" class="nav-btn"><button>HOME</button></a></li>
+                        <li><a href="#skills" class="nav-btn"><button>SKILLS</button></a></li>
+                        <li><a href="#projects" class="nav-btn"><button>PROJECTS</button></a></li>
+                        <li><a href="#education" class="nav-btn"><button>EDUCATION</button></a></li>
+                        <li><a href="#contact" class="nav-btn"><button>CONTACT</button></a></li>
+                    </ul>
+                </div>
+        </div>
+    <section id="about_me">
+            <div>
+                <h1 class="name"> MADANA.LAKSHMIPRASANNA</h1>
+                <h3 class="prof">➡️Front-End Developer</h3>
+                <h3 class="intersts">➡️Intrests</h3>
+                <p>⭐Developing Responsive Websites</p>
+                <p>⭐Exploring React and Javascript</p>
+                <p>⭐Web Animations</p>
+                <p>⭐Improving User Experience</p>
+                <h3 class="goal">➡️Goal</h3>
+                <p>⭐To build modern and user-friendly web applications</p>
+                <img src="https://plus.unsplash.com/premium_photo-1669632824466-09b2c595aa4c?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGljc3xlbnwwfHwwfHx8MA%3D%3D" class="img">
+                <hr>
+                <hr>
+            </div> 
+    </section>
+    <section id="skills">
+         <div>
+                <h1>SKILLS</h1>
+                <p>⭐HTML5</p>
+                <p>⭐CSS</p>
+                <p>⭐BASIC COMPUTER KNOWLEDGE</p>
+                <p>⭐PYTHON BASICS</p>
+                <p>⭐GITHUB</p>
+                <hr>
+                <hr>
+            </div> 
+    </section>
+    <section id="projects">
+        <div>
+                <h1>PROJECTS</h1>
+                <h3>1.PORTFOLIO PAGE</h3>
+                <P>A simple portfolio webpage built using HTML  showing my skills, projects and contact details</P>
+                <!-- <a href=" https://code-with-lakshmi-9.github.io/My-First-Code/"> -->
+                    <button>View Project</button>
+                </a>
+                <h3>2.HEALTH SURVEY FORM</h3>
+                <P>A responsive health survey form built using HTML and CSS with proper form elements and layout</P>
+                <!-- <a href="https://code-with-lakshmi-9.github.io/health-survey-form/"> -->
+                    <button>View Project</button>
+                </a>
+                <h3>3.LOGIN PAGE</h3>
+                <P>A modern responsive login form with glassmorphism UI,blur background, and clean design using HTML and CSS</P>
+                <!-- <a href="https://code-with-lakshmi-9.github.io/modern-login-page/"> -->
+                    <button>View Project</button>
+                </a>
+                <h3>4.e-commerce website</h3>
+                <p>A modern responsive login form with glassmorphism UI,blur background, and clean design using HTML and CSS</p>
+                <!-- <a href="https://code-with-lakshmi-9.github.io/man-silk-sarees/"> -->
+                    <button>View Project</button>
+                </a>
+                <hr>
+                <hr>
+            </div>
+        </section>
+    <section id="education">
+         <div>
+                <h1>EDUCATION</h1>
+                <h4>➡️10th Class</h4>
+                <P>⭐Government School - 2023 - 77 %</P>
+                <h4>➡️Intermediate</h4>
+                <p>⭐Sri Vasavi Junior College - 2025 - 82%</p>
+                <h4>➡️Degree</h4>
+                <p>⭐Persuing Open Degree in Vivekananda Degree College </p>
+                <hr>
+                <hr>
+            </div>
+        </section>
+    <section id="certificates">
+                <div>
+                <h1>CERTIFICATES</h1>
+                <h4>➡️Python Programming Fundamentals (Coursera)</h4>
+                <!-- <a href="python certificate.pdf"> -->
+                    <button>View Certificate</button>
+                </a>
+                <h4>➡️Data Analysis and Visualization with Python(Coursera)</h4>
+                <!-- <a href="data analysis.pdf"> -->
+                    <button>View Certificate</button>
+                </a>
+                <h4>➡️HTML and CSS (Coursera)</h4>
+                <!-- <a href="html and css.pdf"> -->
+                    <button>View Certificate</button>
+                </a>
+                <h4>➡️HTML and CSS : Building a Single page Website(Coursera)</h4>
+                <!-- <a href="single page webpage.pdf"> -->
+                    <button>View Certificate</button>
+                </a>
+                <h4>➡️HTML and CSS crash course(Coursera)</h4>
+                <!-- <a href="crash course.pdf"> -->
+                    <button>View Certificate</button>
+                </a>
+                <hr>
+                <hr>
+            </div> 
+    </section>
+    <section id="contact">
+        <div>
+                <h1>CONTACT</h1>
+                <h3 class="cnt">Name : M.Lakshmiprasanna</h3>
+                <a href="mailto:xxxxxxxxxxx@gmail.com">
+                    <button>.     Mail   .</button>
+                </a>
+                <a href="tel:xxxxxxx144" class="mbnb">
+                    <button>Mobile Number</button>
+                </a>
+                <a href="https://maps.google.com/?q=Hyderabad,India" target="_blank" class="mbnc">
+                    <button>location</button>
+                </a>
+                <a href="https://www.linkedin.com/in/john-doe-123456" class="mbnd">
+                    <button>Linkedin</button>
+                </a>
+                    
+            </div>
+        </div></section>  
+        <footer>
+            <h4 class="footer">@ All Rights Reserved 2026</h4>
+        </footer>
+    </div>
+</body>
+</html>
